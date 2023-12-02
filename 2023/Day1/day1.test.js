@@ -25,6 +25,11 @@ test('calculates calibration value with digits as string', () => {
     ];
 
     expect(day1.calculateCalibrationValueWithDigitsAsString(input)).toBe(381);
+
+});
+
+test('does not replace string if digit already appeared', () => {
+    expect(day1.calculateCalibrationValueWithDigitsAsString(['6vjdtd1j1eightwo'])).toBe(62);
 });
 
 describe('Digit replace', () => {
